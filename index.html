@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+    <div class="container">
+    <nav class="floating-navbar">
+  <ul class="nav-links">
+    <li class="nav-item"><a href="#home">Home</a></li>
+    <li class="nav-item"><a href="explore.html" target="_blank">Explore</a></li>
+    <li class="nav-item"><a href="#about">About</a></li>
+    <li class="nav-item"><a href="FAQ.html" target="_blank">FAQ</a></li>
+<li class="nav-item"><a href="#contact">Contact</a></li>
+    <div class="hover-bg"></div>
+  </ul>
+</nav>
+<audio id="background-music" autoplay loop>
+  <source src="song.mp3" type="audio/mp3" />
+  Your browser does not support the audio element.
+</audio>
+
+
+
+    <section class="hero-wrapper">
+    <section class="hero-section">
+        <div class="hero-vid">
+            <video loop autoplay muted playsinline class="hero-video">
+                <source src="videos/vid1.mp4" type="video/mp4">
+            </video>
+            <div class="video-queue">
+            <div class="thumb-box"><img src="images/thumb-2.jpg" data-src="videos/vid2.mp4" class="thumb" /></div>
+            <div class="thumb-box"><img src="images/thumb-3.jpg" data-src="videos/vid3.mp4" class="thumb" /></div>
+            <div class="thumb-box"><img src="images/thumb-4.jpg" data-src="videos/vid4.mp4" class="thumb" /></div>
+            </div>
+
+
+            <div class="hero-info">
+    <h1 class="headline-top">REDEFINE</h1>
+
+    <h1 class="gaming-text">Reality!</h1>
+
+    <button class="floating-explore-btn" onclick="window.location.href='explore.html'">
+        LET'S EXPLORE THE METAVERSE!
+    </button>
+</div>
+
+            
+        </div>
+    </section>
+    </section>
+
+    <section class="about-section">
+        <h1 class="reveal-curve">DISCOVER THE WORLD'S LARGEST SHARED ADVENTURE</h1>
+            <div class="section-spacer"></div>
+
+        <div class="image-wrapper">
+            <div class="image-box">
+                <img src="images/about.webp" alt="about-img" />
+            </div>
+            </div>
+
+    </section>
+
+       <!-- About Section -->
+    <section class="about-section2" id="about">
+        <!-- Animated background -->
+        <div class="bg-shapes">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+        </div>
+        <div class="grid-overlay"></div>
+
+        <div class="about-container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="reveal-curve">WHO ARE WE?</h2>
+            </div>
+
+
+            <!-- Main Content -->
+            <div class="about-content">
+                <!-- Text Content -->
+                <div class="text-content">
+                    <div class="content-card">
+    <div class="card-icon"><i class='bx bx-world'></i></div>
+    <h3 class="card-title">World Builders</h3>
+    <p class="card-text">Crafting digital worlds that feel real.</p>
+</div>
+
+<div class="content-card">
+    <div class="card-icon"><i class='bx bx-rocket'></i></div>
+    <h3 class="card-title">Future-First</h3>
+    <p class="card-text">Designing tomorrow’s reality—today.</p>
+</div>
+
+<div class="content-card">
+    <div class="card-icon"><i class='bx bx-group'></i></div>
+    <h3 class="card-title">Join the Hive</h3>
+    <p class="card-text">Where 3D dreamers unite & explore.</p>
+</div>
+
+                </div>
+
+                <!-- Visual Content -->
+                <div class="visual-content">
+                    <div class="vr-illustration">
+                        <div class="orbit-ring ring-1"></div>
+                        <div class="orbit-ring ring-2"></div>
+                        <div class="vr-headset"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-section">
+                <div class="stat-card">
+                    <div class="stat-number">10M+</div>
+                    <div class="stat-label">Virtual Explorers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Digital Worlds</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Immersive Adventures</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Possibilities</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="info-section">
+        <div class="info-cards">
+            <div class="card autoDisplay">
+                <h1>IMMERSIVE</h1>
+                <video src="videos/vid1.mp4" autoplay loop muted plays-inline></video>
+            </div>
+            <div class="card autoDisplay">
+                <h1>RADIANT</h1>
+                <video src="videos/hero-5.mp4" autoplay loop muted plays-inline></video>
+            </div>
+            <div class="card autoDisplay">
+                <h1>INTERACTIVE</h1>
+                <video src="videos/vid2.mp4" autoplay loop muted plays-inline></video>
+            </div>
+            <div class="card autoDisplay">
+                <h1>ENGAGING</h1>
+                <video src="videos/vid3.mp4" autoplay loop muted plays-inline></video>
+            </div>
+            <div class="card autoDisplay">
+                <h1>MORE COMING SOON</h1>
+                <video src="videos/feature-1.mp4" autoplay loop muted plays-inline></video>
+            </div>
+        </div>
+    </section>
+        
+
+    </div>
+    <div class="section-spacer"></div>
+
+  <!-- Newsletter Section -->
+    <section class="newsletter-section" id="contact">
+        <div class="newsletter-container">
+            <p class="newsletter-subtitle">Stay Updated!</p>
+            <h1 class="newsletter-title">JOIN THE METAVERSE REVOLUTION</h1>
+            <form class="newsletter-form" id="main-newsletter-form">
+                <input type="email" placeholder="Enter your email address" required />
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Navigation Links -->
+            <div class="footer-column">
+                <h3>Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="explore.html" target="_blank">Explore VR World</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="FAQ.html" target="_blank">Frequently Asked Questions</a></li>
+                    <li><a href="#contact">Newsletter</a></li>
+                </ul>
+            </div>
+
+            <!-- Global Presence -->
+            <div class="footer-column">
+                <h3>Global Presence</h3>
+                <ul class="footer-info">
+                    <li><i class='bx bx-map'></i>Beirut – Metaverse Tower</li>
+                    <li><i class='bx bx-map'></i>Paris – VR District 12</li>
+                    <li><i class='bx bx-map'></i>Tokyo – Akihabara Lab</li>
+                    <li><i class='bx bx-map'></i>NYC – VR Innovation Hub</li>
+                </ul>
+            </div>
+
+            <!-- Contact & Newsletter -->
+            <div class="footer-column">
+                <h3>Get In Touch</h3>
+                <ul class="footer-info">
+                    <li><i class='bx bx-envelope'></i>contact@chloeverse.com</li>
+                    <li><i class='bx bx-phone'></i>+961 81 471 978</li>
+                </ul>
+                
+                <div class="footer-newsletter">
+                    <form class="footer-newsletter-form" id="footer-newsletter-form">
+                        <input type="email" placeholder="Quick subscribe" required />
+                        <button type="submit"><i class='bx bx-send'></i></button>
+                    </form>
+                </div>
+
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                    <a href="#"><i class='bx bxl-discord-alt'></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Chloe Metaverse. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+</body>
+</html>

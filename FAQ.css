@@ -1,0 +1,197 @@
+/* Explore page video background and layout */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  /*background: black;*/
+  color: white;
+}
+
+/* Fullscreen centered video */
+#bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  object-fit: cover;
+  pointer-events: none; /* So it doesn't block clicks */
+}
+
+
+
+  /* Container */
+ .faq-container {
+  max-width: 820px;
+  margin: 40px auto 60px; /* moved text up by reducing top margin */
+  background: rgba(255, 255, 255, 0.05); /* near transparent white */
+  border-radius: 20px;
+  padding: 40px 35px;
+  font-family: 'Poppins', sans-serif;
+  color: #e0eaffcc;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+  user-select: none;
+
+  /* add scroll */
+  max-height: 75vh; /* limit height */
+  overflow-y: auto;
+}
+
+/* So scrollbar looks subtle & consistent */
+.faq-container::-webkit-scrollbar {
+  width: 8px;
+}
+.faq-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.faq-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+
+  /* Header */
+  .faq-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .faq-title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+    font-size: 80px;
+    max-width: 1150px;
+    text-align: center;
+    margin: 10px 0;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #edff66, #a9e5ef, #0a1865, #edff66);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+}
+  .faq-subtitle {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #a0caffcc;
+    margin-bottom: 0.6rem;
+  }
+  .faq-description {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #b0c9ffbb;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* FAQ Box */
+  .faq-box {
+    margin-top: 1rem;
+  }
+
+  /* FAQ item */
+  .faq-item {
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 14px;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 0 18px #3700ff55;
+    overflow: hidden;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  }
+  .faq-item.active {
+    background: rgba(1, 7, 26, 0.752);
+    box-shadow: 0 0 18px #1b0358dd;
+  }
+
+  /* Question button */
+  .faq-question {
+    width: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 25px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #e0eaff;
+    user-select: none;
+    outline-offset: 4px;
+    transition: color 0.3s ease;
+  }
+  .faq-question:hover,
+  .faq-item.active .faq-question {
+    color: #00d4ff;
+  }
+
+  .question-content {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .question-icon {
+    font-size: 1.7rem;
+    user-select: none;
+  }
+
+  /* Chevron */
+  .chevron {
+    width: 24px;
+    height: 24px;
+    border-style: solid;
+    border-width: 0 3.5px 3.5px 0;
+    border-color: #e0eaff;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  .faq-item.active .chevron {
+    transform: rotate(-135deg);
+    border-color: #00d4ff;
+  }
+
+  /* Answer */
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    padding: 0 25px;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #c4d9ffcc;
+  }
+  .faq-item.active .faq-answer {
+    padding: 20px 25px 25px;
+    max-height: 350px;
+  }
+
+  /* Custom cursor */
+  .cursor {
+    pointer-events: none;
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,208,255,0.3) 0%, transparent 70%);
+    z-index: 9999;
+    transition: transform 0.1s ease;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .faq-container {
+      padding: 40px 20px;
+      margin: 60px 20px 60px;
+    }
+    .faq-question {
+      font-size: 1.05rem;
+      padding: 18px 20px;
+    }
+  }
