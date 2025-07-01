@@ -46,7 +46,7 @@ The website I developed is an interactive 3D-themed website built for virtual ex
 **▶️ To Run It:**
 ---
 1. Clone the repo:
-git clone (https://github.com/Chloekhoury/Metaverse-Reality
+git clone https://github.com/Chloekhoury/Metaverse-Reality
 
 2. Run index.html to go to the home page
 
