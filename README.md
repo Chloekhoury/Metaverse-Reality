@@ -1,6 +1,8 @@
 👩‍💻 Created by: Chloe Khoury
 ---
 
+Note: You need to wait a minute before starting exploring the website, so all the animations load correctly
+
 **What is my Metaverse Reality website?**
 ---
 The website I developed is an interactive 3D-themed website built for virtual experience lovers. It takes users on a journey through immersive environments like 3D animations, realistic forest and ocean, and 3D characters, combining virtual reality visuals, real-world data, and a futuristic interface.
