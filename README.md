@@ -24,12 +24,13 @@ The website I developed is an interactive 3D-themed website built for virtual ex
   
 **🎮 What's Inside?**
 ---
-index.html -> Home page with animated VR-themed interface & a background song. When the website opens, you can click on the middle square to change in the animations!
-explore.html -> 3D Animation to choose the virtual world you want to explore 
-fire.html -> Fullscreen A-Frame 3D experience in the forest with live data exctraction about the asteroids
-ocean.html -> Fullscreen A-Frame 3D experience in the ocean with live data exctraction about the sea animals
-FAQ.html -> FAQ page using Bootstrap with animated accordion about the environments, APIs, and vision
-
+| File        | Description                                                                 |
+|-------------|-----------------------------------------------------------------------------|
+| `index.html`  | Home page with an animated VR-themed interface and a background song. You can click on the middle square to cycle through the animation. |
+| `explore.html` | 3D animation hub to choose which virtual world you want to explore.   |
+| `fire.html`    | Fullscreen A-Frame 3D experience in a **Forest** showing live asteroid data via NASA API. |
+| `ocean.html`   | Fullscreen A-Frame 3D experience in an **Ocean** showing real-time animal info using public APIs. |
+| `FAQ.html`     | FAQ page using Bootstrap accordion explaining the environments, APIs used, and the future vision. |
 
 **Highlights**
 ---
