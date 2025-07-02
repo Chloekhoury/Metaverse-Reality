@@ -1,7 +1,7 @@
 👩‍💻 Created by: Chloe Khoury
 ---
 
-Note: You need to wait a minute before starting exploring the website, so all the animations load correctly
+Note: You need to wait a minute before starting exploring the website, so all the animations load correctly. If you find any issue, you can check the website's video demo attached!
 
 **What is my Metaverse Reality website?**
 ---
